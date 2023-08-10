@@ -16,9 +16,11 @@ int main()
     int cnt = 1;
     int i = 0;
     for(int j = 1; j<n; j++){
-        if(f[i] <= s[j])  cnt++;
-       i = j;
+        if(f[i] <= s[j])
+        {
+            cnt++;
+            i = j;
+        }
     }
     cout << cnt << "\n";
 }
-
